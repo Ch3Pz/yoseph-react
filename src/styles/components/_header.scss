@@ -1,0 +1,35 @@
+$hamburger-types: (elastic);
+$hamburger-layer-width: 30px;
+
+@import "../../vendor/hamburgers-master/_sass/hamburgers/hamburgers";
+
+.hamburger{
+  &:focus{
+    outline: none;
+  }
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  height: 100px;
+  justify-content: center;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  background-color: rgba(255,255,255,0.5);
+
+  &__left{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+  }
+}
+
+.header-icon{
+  max-height: 50px;
+}
+.header-text{
+  // @extend .h2;
+  margin-bottom: 0;
+}

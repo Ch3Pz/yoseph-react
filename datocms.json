@@ -1,0 +1,11 @@
+{
+  "name": "Yoseph",
+  "description": "",
+  "previewImage": "",
+  "datocmsProjectId": "",
+  "deploymentType": "static",
+  "buildCommand": "yarn build",
+  "buildDirectory": "build",
+  "datocmsApiTokenEnvName": "REACT_APP_DATO_API_TOKEN",
+  "livePreviewUrl": "https://demo-datocms-react-apollo.netlify.com/"
+}

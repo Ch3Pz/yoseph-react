@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&font-display=swap');
+
+@import "./base/all";
+@import "./components/all";
+@import "./helpers";
+
+$font-nunito:  "Nunito", Arial, Helvetica, sans-serif;
+
+body{
+  font-family: $font-nunito;
+  overflow-x: hidden;
+}
+
+.videobg{
+  position: absolute;
+  left:0;
+  top:0;
+  min-width: 110%;
+  min-height: 100%;
+  max-width: 500%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  overflow: hidden;
+}
+.videoverlay{
+  position: relative;
+  .col{
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+  }
+}
