@@ -18,23 +18,6 @@ module.exports = {
       ],
       test: /\.js$/,
       exclude: /node_modules/
-    }, {
-      test: /\.s?css$/,
-      use: [
-        'style-loader',
-        'css-loader',
-        'sass-loader'
-      ]
-    },
-    {
-      test: /\.(png|jp(e*)g|svg|eot|ttf|woff)$/,
-      use: [{
-          loader: 'url-loader',
-          options: {
-              limit: 15000000, // Convert images < 8kb to base64 strings
-              name: 'images/[hash]-[name].[ext]'
-          }
-      }]
     }
     ]
   },

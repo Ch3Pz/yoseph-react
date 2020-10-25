@@ -7,7 +7,8 @@
   "scripts": {
     "build": "webpack -p",
     "dev-server": "webpack-dev-server",
-    "webpack-test": "live-server ./public"
+    "webpack-test": "live-server ./public",
+    "buildcss": "gulp"
   },
   "dependencies": {
     "babel-core": "6.25.0",
@@ -40,9 +41,17 @@
   "devDependencies": {
     "babel-cli": "6.24.1",
     "file-loader": "^4.2.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
     "url-loader": "^2.1.0",
+    "webpack": "3.1.0",
     "webpack-bundle-analyzer": "^3.6.0",
-    "webpack-dev-server": "2.5.1",
-    "webpack": "3.1.0"
-  }
+    "webpack-dev-server": "2.5.1"
+  },
+  "browserslist": [
+    "last 2 version",
+    "ie 11"
+  ]
 }
