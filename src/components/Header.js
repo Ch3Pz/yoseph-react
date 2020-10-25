@@ -1,40 +1,39 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React, {  useEffect } from "react";
+import { Link } from "react-router-dom";
 
+const Header = () => {
+  useEffect(() => {
+    const headerWatchScroll = () => {
+      let scrollTop = $(window).scrollTop();
 
-export default () => (
-  <header className="header">
-    <div className="container">
-      <div className="header__left">
-        <img className="header-icon" src="./img/icon2.png" alt="logo"/>
-        &nbsp;
-        <h2 className="header-text">CORESOME</h2>
+      if ( scrollTop > 100 ){
+        $('.header').addClass('opaque');
+      }else{
+        $('.header').removeClass('opaque');
+      }
+    }
+    $(window).on('scroll', headerWatchScroll);
+  }, []);
+  return (
+    <header className="header">
+      <div className="container">
+        <div className="header__left">
+          <Link to="/">
+            <img className="header-icon" src="/img/icon2.png" alt="logo"/>
+          </Link>
+          &nbsp;
+          <h2 className="header-text"></h2>
+        </div>
+        {/*
+        <button className="hamburger" type="button">
+          <span className="hamburger-box">
+            <span className="hamburger-inner"></span>
+          </span>
+        </button>
+        */}
       </div>
-      <button className="hamburger" type="button">
-        <span className="hamburger-box">
-          <span className="hamburger-inner"></span>
-        </span>
-      </button>
-    </div>
-    {/*
-    <h1 className="Header-h1">TEST</h1>
-    <nav className="Header-nav">
-      <NavLink
-        exact
-        to="/"
-        className="Header-navLink"
-        activeClassName="Header-isActive"
-      >
-        Home
-      </NavLink>
-      <NavLink
-        to="/about"
-        className="Header-navLink"
-        activeClassName="Header-isActive"
-      >
-        About
-      </NavLink>
-    </nav>
-    */}
-  </header>
-);
+    </header>
+  );
+}
+
+export default Header;

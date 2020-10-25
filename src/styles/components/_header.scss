@@ -24,6 +24,10 @@ $hamburger-layer-width: 30px;
     align-items: center;
     flex-grow: 1;
   }
+
+  &.opaque{
+    background-color: rgba(255,255,255,1);
+  }
 }
 
 .header-icon{

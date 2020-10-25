@@ -27,7 +27,7 @@ module.exports = {
       ]
     },
     {
-      test: /\.(png|jp(e*)g|svg)$/,
+      test: /\.(png|jp(e*)g|svg|eot|ttf|woff)$/,
       use: [{
           loader: 'url-loader',
           options: {
@@ -43,7 +43,8 @@ module.exports = {
   ],
   // devtool: 'cheap-module-eval-source-map',
   devServer: {
-    contentBase: path.join(__dirname, 'public')
+    contentBase: path.join(__dirname, 'public'),
+    historyApiFallback: true,
   },
   externals: {
     jquery: 'jQuery'

@@ -8,14 +8,36 @@
   overflow: hidden;
   color: white;
   padding: 5rem 0;
-  min-height: 100vh;
 
   .container{
     align-items: center;
   }
 
+  &--videoBg{
+    min-height: 100vh;
+    margin-top: -100px;
+  }
   &--whiteBg{
     background: white;
     color: black;
   }
+}
+
+
+@media(min-width: $breakpoint_sm_max + 1){
+}
+
+@media(min-width: $breakpoint_md_max + 1){
+}
+
+@media(min-width: $breakpoint_lg_max + 1){
+  .hero{
+    min-height: 100vh;
+  }  
+}
+
+@media(min-width: $breakpoint_xl_max + 1){
+}
+
+@media(min-width: $breakpoint_xxl_max + 1){
 }

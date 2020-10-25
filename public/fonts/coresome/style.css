@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'coresome';
+  src:  url('fonts/coresome.eot?ynajdn');
+  src:  url('fonts/coresome.eot?ynajdn#iefix') format('embedded-opentype'),
+    url('fonts/coresome.ttf?ynajdn') format('truetype'),
+    url('fonts/coresome.woff?ynajdn') format('woff'),
+    url('fonts/coresome.svg?ynajdn#coresome') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icn-"], [class*=" icn-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'coresome' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icn-envelope:before {
+  content: "\e900";
+}
+.icn-eye:before {
+  content: "\e901";
+}
+.icn-arrow-down:before {
+  content: "\e902";
+}
+.icn-home:before {
+  content: "\e911";
+}
+.icn-linkedin:before {
+  content: "\e906";
+}

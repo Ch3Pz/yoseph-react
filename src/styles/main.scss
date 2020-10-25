@@ -4,11 +4,16 @@
 @import "./components/all";
 @import "./helpers";
 
+// @include font-face('coresome', '/public/fonts/coresome');
+// @import "../../public/fonts/coresome/style.scss";
 $font-nunito:  "Nunito", Arial, Helvetica, sans-serif;
 
 body{
   font-family: $font-nunito;
   overflow-x: hidden;
+}
+main{
+  padding-top: 100px;
 }
 
 .videobg{
@@ -28,5 +33,39 @@ body{
   .col{
     color: white;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+  }
+}
+
+/** Layout-specific implementation **/
+.icon-grad, .icon-dev{
+  max-width: 60%;
+}
+.icon-grad{
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.icon-dev{
+  margin-top: 50px;
+  max-height: 300px;
+  margin-left: calc(50vw - 90px);
+}
+.image-portfolio{
+  width: 80%;
+  height: 0;
+  padding-bottom: 80%;
+  background-size: cover;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+
+
+@media(min-width: $breakpoint_md_max + 1){
+  .icon-grad{
+    margin-left: 100px;
+  }
+  .icon-dev{
+    max-height: 100%;
+    margin-top: 0;
+    margin-left: 100px;
   }
 }
