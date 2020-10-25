@@ -8,6 +8,9 @@
 // @import "../../public/fonts/coresome/style.scss";
 $font-nunito:  "Nunito", Arial, Helvetica, sans-serif;
 
+html,body{
+  width: 100%;
+}
 body{
   font-family: $font-nunito;
   overflow-x: hidden;
@@ -42,12 +45,12 @@ main{
 }
 .icon-grad{
   margin-left: 50px;
-  margin-top: 50px;
+  margin-top: 75px;
 }
 .icon-dev{
-  margin-top: 50px;
+  margin-top: 15px;
   max-height: 300px;
-  margin-left: calc(50vw - 90px);
+  margin-left: calc(50vw - 120px);
 }
 .image-portfolio{
   width: 80%;
@@ -61,6 +64,7 @@ main{
 
 @media(min-width: $breakpoint_md_max + 1){
   .icon-grad{
+    margin-top: 15px;
     margin-left: 100px;
   }
   .icon-dev{

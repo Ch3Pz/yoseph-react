@@ -42,9 +42,7 @@ const Homepage = () => {
   }, []);
 
   return(
-  <div>
-    <Header />
-
+  <React.Fragment>
     <div className="hero hero--videoBg">
       <video playsInline autoPlay muted loop className="videobg">
         <source src="./video/vid1_comp.mp4" type="video/mp4" />
@@ -138,7 +136,7 @@ const Homepage = () => {
       </div>
     </div>
 
-  </div>
+  </React.Fragment>
   );
 }
 

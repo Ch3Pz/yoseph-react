@@ -41,7 +41,7 @@ const Portfolio = props => {
   );
 
   return (
-    <div>
+    <React.Fragment>
       {isFetching ? (
         <h2>Loading...</h2>
       ) : (
@@ -70,7 +70,7 @@ const Portfolio = props => {
           </div>
       )
     )}
-    </div>
+    </React.Fragment>
   );
 }
 
